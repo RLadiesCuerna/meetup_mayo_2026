@@ -10,7 +10,7 @@ Miércoles 27 de mayo de 2026
 ## Instructora
 
 - Dra. Leticia Vega Alvarado
-Doctora en Ingeniería en el área de Computación, académica de la UNAM y del ICAT-UNAM desde hace 24 años. Sus intereses académicos se enfocan en el área de la bioinformática, particularmente en el análisis de expresión diferencial.
+- Doctora en Ingeniería en el área de Computación, académica de la UNAM y del ICAT-UNAM desde hace 24 años. Sus intereses académicos se enfocan en el área de la bioinformática, particularmente en el análisis de expresión diferencial.
 Ha impartido diversos cursos de programación durante más de 20 años y es instructora certificada por The Carpentries / Software Carpentry desde 2017.
 Le apasiona programar y tiene interés en el desarrollo de software.
 
