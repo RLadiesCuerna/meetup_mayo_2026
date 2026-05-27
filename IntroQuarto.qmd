@@ -1,0 +1,55 @@
+---
+title: "Primeros pasos con Quarto"
+subtitle: "Introducción práctica a la generación de documentos dinámicos con R"
+author: "Leticia Vega Alvarado"
+format: html
+editor: visual
+---
+
+```{r}
+#| label: load_packages
+library(tidyverse)
+library(dplyr)
+library(knitr)
+```
+
+## Introducción a Quarto
+
+Para esta sesión vamos a trabajar con el conjunto de datos Iris y exploraremos algunas gráficas y tablas relacionadas con sus variables.
+
+Datos
+
+El conjunto de datos [Iris]{style="color: purple; font-family: Georgia; font-weight: bold;"} es uno de los datasets clásicos en estadística y ciencia de datos. Fue introducido por Ronald A. Fisher en 1936 como parte de un estudio para clasificar especies de flores a partir de mediciones morfológicas[@fisher1936]. Más información sobre el dataset Iris en Wikipedia:
+
+El conjunto contiene 150 observaciones de flores pertenecientes a tres especies: Iris setosa, Iris versicolor,Iris virginica
+
+Para cada flor se registran cuatro variables: Longitud del sépalo (Sepal.Length), Ancho del sépalo (Sepal.Width), Longitud del pétalo (Petal.Length), Ancho del pétalo (Petal.Width)
+
+Este dataset es ampliamente utilizado para ilustrar técnicas de visualización, clasificación y análisis exploratorio de datos.
+
+## Graficando las especies
+
+En esta sección veremos, mediante una gráfica de dispersión, cómo se distribuyen las distintas especies de Iris según sus variables morfológicas. La figura representa la relación entre ancho y largo del sépalo por especie.
+
+```{r}
+ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
+  geom_point(size = 2) +
+  theme_bw()
+```
+
+Este tipo de variables también puede representarse mediante ecuaciones utilizando sintaxis LaTeX dentro de Quarto. Por ejemplo, una aproximación sencilla del área del sépalo podría expresarse como:
+
+Una guía rápida para escribir fórmulas matemáticas en LaTeX puede consultarse en el capítulo 8 del manual: <https://aprendeconalf.es/latex-manual/formulas.html>
+
+## Tablas de resultados
+
+Además de las gráficas, los documentos Quarto permiten incorporar tablas para resumir y explorar información del conjunto de datos Iris. Estas tablas pueden escribirse manualmente o generarse automáticamente a partir de los datos.
+
+
+
+
+En la tabla podemos observar los renglones del dataset Iris cuyo ancho del sépalo es mayor o igual a 3.5.
+
+
+
+## Referencias
